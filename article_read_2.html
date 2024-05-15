@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Wellnence Recipes</title>
+    <link rel="shortcut icon" href="imgs/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+    <link rel="stylesheet" href="css/open_sans.css">
+    <link rel="stylesheet" href="css/playfair.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+    <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/articles.css">
+    <style>
+        main .slider .img1 {
+            background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img2 {
+            background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+            background-size: cover;
+        }
+
+        main .slider .img3 {
+            background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="warning">
+            <div class="container">
+                <span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+                        xml:space="preserve">
+                        <g>
+                            <path
+                                d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+                            </path>
+                        </g>
+                    </svg> Have a Problem? <a href="./contactUs.html">Contact us</a> </span>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <div class="search" style="display: flex;">
+                    <form id="searchForm">
+                        <input type="search" id="search" placeholder="Search for a recipe" name="search" value="" maxlength="15">
+                        <input type="submit" value="">
+                        
+                    </form>
+
+                </div>
+
+
+                <button class="userButton">
+                    <svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+                        </path>
+                    </svg>
+                    <svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+                        <path
+                            d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+                        <path
+                            d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+                    </svg>
+                </button>
+                <ul class="headerMenu">
+                    <li>
+                        <a href="index.html">Recipes</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Articles</a>
+                    </li>
+                    <li>
+                        <a href="calculator.html">Calorie Calculator</a>
+                    </li>
+                    <li>
+                        <a href="mealplan.html">Meal Plan</a>
+                    </li>
+                </ul>
+                <div class="login">
+                    <form id="authenticationForm" action="index.html?page=" method="post">
+                        <!--<input type="hidden" name="page" value="">-->
+                        <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
+                        <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
+                        <input type="submit" id="authentication" value="Login" name="authentication">
+                        <a href="" id="signIn">Sign Up</a>
+                        <div class="getPremium">
+                            <span class="text">Don’t have an account?</span>
+                            <a href="" class="getAccess">Get access to premium</a>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+
+        </header>
+        <main class="articles read">
+
+            <section class="title">
+                <h1 class="underline">COCONUT OIL WONDERS</h1>
+            </section>
+            <section class="container">
+                <div class="article_block">
+                    <div class="article_illustration">
+                        <img src="imgs/articles/coconut.png" alt="">
+                    </div>
+                    <p>Coconut oil, just like a cheeky dude who grew into a full-fledged hunk, is now the hot, sexy oil
+                        that no one can shut up about. Gwyneth Paltrow swallows it in her mouth to whiten her teeth,
+                        Poppy Delevingne sleeps in it, and Kelly Osborne wants you all to tap your cheekbones for a
+                        natural highlight. Coconut oil does not moisturize - not oil - but used strategically, it can
+                        soften, add shine and help repair dry hair.
+                        Read on for nine ways to use coconut oil in your hair routine.
+                    </p>
+                    <h3>1. USE IT AS A PROTECTIVE "PRE-POO"</h3>
+                    <p>Here's a trick that's especially helpful for those with dry or curly hair: avoid scalp, coat dry
+                        hair with a dollop of coconut oil an hour or so before taking a shower. The oil protects each
+                        strand from drying out while you shampoo. Rinse the oil from your hair after shampooing and
+                        apply conditioner as normal. (Note that if you have thin hair, the oil may be too much for you.)
+                    </p>
+                    <h3>2. MAKE YOUR CONDITION BETTER THAN IT EVER BEEN</h3>
+                    <p>Coconut oil makes any conditioner even more conditioning. After you saturate your hair with
+                        conditioner, add a layer of coconut oil on top. The oil is occlusive, so it will trap the
+                        conditioner's moisturizing ingredients in your hair, allowing them to penetrate the shaft longer
+                        and more effectively. Wait at least 15 minutes or up to an hour before rinsing - the longer you
+                        wait, the softer your hair will be.</p>
+                    <h3>3. JUST LET IT IN
+                    </h3>
+                    <p>This is a convenient solution for those with thick, dry hair. After your shampoo and conditioner,
+                        comb all the moisturizer through your hair (DevaCurls' Supercream and Oyin Handmade's Hair Dew
+                        are really great). Then take a quarter amount of coconut oil and put it on top of the
+                        moisturizer. Dry your hair as you normally would. The oil traps in the moisturizer and keeps
+                        your hair hydrated for longer.</p>
+                    <h3>4. MAKE DETANGLING A LITTLE LESS BURNING</h3>
+                    <p>Bun hair? Run coconut oil over the sections that need a little help. The oil provides a useful
+                        "slip" that makes combing less difficult.</p>
+                    <h3>5. AND MAKE YOUR HAIR MORE PHOTOGRAPHY</h3>
+                    <p>Instead of putting a lot of shiny stuff in your hair, scoop a few dollops of coconut oil into a
+                        spray bottle and spritz your hair for a natural shine. If you are working with solidified oil,
+                        place the bottle in a bowl of warm water for a few minutes to allow the oil to liquefy again.
+                    </p>
+                    <h3>6. WEAR IT LIKE A BATH CAP</h3>
+                    <p>The worst thing about taking a dip? The big salt and chlorine wreck on your hair, of course.
+                        Before going to the pool or beach, cover your hair with coconut oil. The oil acts as a barrier
+                        between your strands and the water to some extent. Think of it as a natural swim cap (or a swim
+                        cap that won't make you look like a sucker).</p>
+                    <h3>7. OR A HUMIDITY DEGREE</h3>
+                    <p>Rub a pea-sized amount of coconut oil between your fingers to tame flyaways and frizz. Transfer
+                        the oil to the frizzy areas of your hair to soothe rogue strands. A little goes a long way!</p>
+                    <!--******* sidebar-->
+                    <h3>8. PHOTOSHOP YOUR SPLIT POINTS</h3>
+                    <p>Coconut oil doesn't glue your split ends back together (nothing will, despite what some products
+                        claim), but it can hide frayed ends for a short while. Simply rub a little bit on your ends. The
+                        oil gives shine and temporarily smoothes the torn hair.</p>
+                    <h3>9. GET RID OF LICE</h3>
+                    <p>Coconut oil is surprisingly effective. A 2002 study looked at 940 children who were given coconut
+                        oil, anise oil and ylang hair cocktail. The mixture was applied to each child's hair three times
+                        a day for five days. The combination of coconut and oil was successful for 92.3 percent of the
+                        lice cases, slightly better than the medicinal control group, which saw a 92.2 percent success
+                        rate.</p>
+                    <h3>BUT DO NOT USE IT FOR HAIR LOSS OR DANDRUFF.</h3>
+                    <p>There are no credible, peer-reviewed studies showing that coconut oil can grow hair. It's a bit
+                        boring, but your best bet is still Rogaine. As for dandruff, coconut oil can cause even more
+                        flakes! When used on your scalp, coconut oil clogs pores and prevents hair follicles from
+                        "breathing". This dries out your scalp and can make a case of dandruff more pronounced. The
+                        solution? Try a medicated shampoo. </p>
+                    <h3>
+                        BENEFITS OF COCONUT OIL
+                    </h3>
+                    <p>Coconut oil is rich in antioxidants and fatty acids and has antiviral, antifungal and
+                        antibacterial properties. This allows coconut oil to improve the appearance, texture and health
+                        of our hair. When used on hair, coconut oil can:</p>
+                    <p>
+                    <ul>
+                        <li>- improve hair dryness</li>
+                        <li>- improve scalp health</li>
+                        <li>- protect the hair against protein loss</li>
+                        <li>- protect hair from UV exposure</li>
+                        <li>- fight infections and fungus</li>
+                        <li>- support hair growth</li>
+                        <li>- add volume and shine</li>
+                    </ul>
+                    </p>
+                    <p>Lush, shiny, manageable and healthy hair can be yours - with the benefits of coconut oil! Have
+                        you been tempted to ditch your commercial conditioners, serums, and styling products that damage
+                        your hair (and possibly your health) over time? Well guess what? You can replace them with this
+                        all-natural solution. Coconut oil is rich in antimicrobial properties, lauric acid and medium
+                        chain fatty acids that strengthen hair, condition the scalp and help hair regrowth. While we've
+                        been hearing about coconut oil's internal health benefits for quite some time, it is time to
+                        bring light to other uses of coconut oil, including its use as an all-natural, multitasking hair
+                        care product. Rich in vitamins, minerals and other nutrients, the nourishing benefits of coconut
+                        oil for hair keeps your hair strong, shiny and looking great!</p>
+
+                </div>
+                <aside>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/waking_up_early.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>7 SIMPLE TIPS TO WAKE UP EARLY</h3>
+                            <a href="article_read_13.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/limited%20budget.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>TIPS FOR CLEAN EATING WITH A LIMITED BUDGET</h3>
+                            <a href="article_read_4.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/serving_size.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>HOW TO MEASURE SERVING SIZES</h3>
+                            <a href="article_read_6.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="img">
+                            <img src="imgs/articles/live_longer.png" alt="">
+                        </div>
+                        <div class="wrap">
+                            <h3>9 NUTRITIONAL RULES TO HELP YOU LIVE LONGER</h3>
+                            <a href="article_read_9.html" class="showRecipe">Read More</a>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+        </main>
+        <footer>
+            <section class="ft-main ">
+                <div class="ft-main-item side footer-menu">
+                    <h2 class="ft-title">Menu</h2>
+                    <ul>
+                        <li><a href="/?page=policy">Privacy Policy</a></li>
+                        <li><a href="/?page=terms">Terms &amp; Conditions</a></li>
+                        <li><a href="/?page=contactUs">Contact us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="ft-main-item" id="main-item">
+                    <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+                    
+                </div>
+    
+                <div class="ft-main-item side footer-contact">
+                    <h2 class="ft-title">Contact us</h2>
+                    <ul>
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </section>
+            <p>© 2024 wellnence.com. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/index.js?"></script>
+</body>
+
+</html>

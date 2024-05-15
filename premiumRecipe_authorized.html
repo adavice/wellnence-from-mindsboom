@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Premium recipe</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/premiumRecipe.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div id="warning">
+			<div class="container">
+				<span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+						id="Capa_1" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;"
+						xml:space="preserve">
+						<g>
+							<path
+								d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
+							</path>
+						</g>
+					</svg> Have a Problem? <a href="./contactUs.html">Contact us</a></span>
+			</div>
+		</div>
+		<header>
+			<div class="container">
+				<a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+				<div class="search" style="display: flex;">
+					<form id="searchForm">
+						<input type="search" id="search" placeholder="Search for a recipe" name="search" value=""
+							maxlength="15">
+						<input type="submit" value="">
+
+					</form>
+
+				</div>
+
+
+				<button class="userButton">
+					<svg class="open" onclick="clickLogin(true);" height="512pt" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0">
+						</path>
+					</svg>
+					<svg class="close" onclick="clickLogin(false);" viewBox="0 0 512 512" width="512pt"
+						xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0" />
+						<path
+							d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0" />
+						<path
+							d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0" />
+					</svg>
+				</button>
+				<ul class="headerMenu">
+					<li>
+						<a href="index.html">Recipes</a>
+					</li>
+					<li>
+						<a href="articles.html">Articles</a>
+					</li>
+					<li>
+						<a href="calculator.html">Calorie Calculator</a>
+					</li>
+					<li>
+						<a href="mealplan.html">Meal Plan</a>
+					</li>
+				</ul>
+				<ul class="authorized">
+					<li id="balanceZero">0 recipes are available</li>
+					<li class="userName">
+						<a class="userProfile" href="#"><img src="imgs/user.png" alt=""><span>User Name</span></a>
+						<ul class="subMenu">
+							<li><a href="#">My goal</a></li>
+							<li><a href="#">Favorites</a></li>
+							<li><a href="#"><img src="imgs/exit_icon.png" alt="">Log out</span></a></li>
+						</ul>
+					</li>
+					<li class="availableRecipes">
+						<span class="recipesNumber">50</span><span> recipes are available</span>
+					</li>
+					<li class="logOutUser">
+						<a href="#"><img src="imgs/exit_icon.png" alt=""><span>Log out</span></a>
+					</li>
+				</ul>
+
+
+			</div>
+
+		</header>
+		<main>
+			<section class="premiumRecipe container">
+				<div class="img">
+					<img src="imgs/1.jpg" alt="">
+				</div>
+				<div class="recipe">
+					<h2>The best vegan burger</h2>
+					<p class="description">This easy recipe for tofu veggie burgers is easy to make and great for an
+						everyday vegetarian and vegan lunch, dinner, picnic or for a vegetarian barbecue. Need them to
+						be gluten-free as well? Just swap out the regular flour for any kind of gluten-free flour.
+						Enjoy!</p>
+					<div class="info">
+						<span class="cook">
+							<span class="title">COOKS IN: </span>
+							<span>25MINUTES PLUS PROVING TIME</span>
+						</span>
+						<span class="difficulty">
+							<span class="title">DIFFICULTY: </span>
+							<span>NOT TOO TRICKY</span>
+						</span>
+					</div>
+					<div class="buttons_recipe">
+						<a class="recipe_link" href="#">+ Add to my meal plan</a>
+						<a class="recipe_link" href="#"><img src="imgs/heart_light.svg"/> Favourites</a>
+					</div>
+					<div class="nutrition">
+						<span class="title">Nutrition per serving:</span>
+						<div class="row">
+							<div class="calories">
+								<span class="title">Calories</span>
+								<span class="unit"><span class="number">393</span> kcal</span>
+							</div>
+							<div class="fat">
+								<span class="title">Fat</span>
+								<span class="unit"><span class="number">17.2</span> g</span>
+							</div>
+							<div class="saturates">
+								<span class="title">Saturates</span>
+								<span class="unit"><span class="number">2.5</span> g</span>
+							</div>
+							<div class="protein">
+								<span class="title">Protein</span>
+								<span class="unit"><span class="number">8.8</span> g</span>
+							</div>
+							<div class="carbs">
+								<span class="title">Carbs</span>
+								<span class="unit"><span class="number">54.1</span> g</span>
+							</div>
+							<div class="sugars">
+								<span class="title">Sugars</span>
+								<span class="unit"><span class="number">4.2</span> g</span>
+							</div>
+							<div class="salt">
+								<span class="title">Salt</span>
+								<span class="unit"><span class="number">1.1</span> g</span>
+							</div>
+							<div class="fibre">
+								<span class="title">Fibre</span>
+								<span class="unit"><span class="number">2.8</span> g</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="ingredients">
+					<h3>Ingredients:</h3>
+					<ul class="ingredientsList">
+						<li>250 g strong bread flour</li>
+						<li>2 teaspoons dried yeast</li>
+						<li>1 teaspoon caster sugar</li>
+						<li>olive oil</li>
+						<li>2 cloves of garlic</li>
+						<li>1 x 400 g tin of chopped tomatoes</li>
+						<li>a few sprigs of fresh basil</li>
+					</ul>
+				</div>
+				<div class="method">
+					<h3>Method:</h3>
+					<ol class="methodList">
+						<li>Mix the flour, yeast, sugar, 1 teaspoon of sea salt, 1 tablespoon of oil and 180ml to 200ml
+							of tepid water.</li>
+						<li>Knead to an elastic dough, then cover and leave to rise for 1 hour.</li>
+						<li>Peel, chop and fry the garlic in 4 tablespoons of oil, then add the tomatoes, pick in the
+							basil leaves, and season with salt and black pepper.</li>
+						<li>Preheat a griddle pan or barbecue.</li>
+						<li>Divide the dough into 4 balls, then roll each out. Brush one side of each with oil, then
+							cook, oiled side down, for 2 to 4 minutes, or until the bottom looks cooked.</li>
+						<li>Brush the raw side with oil and flip over and cook until golden. Top with the sauce and
+							toppings of your choice.</li>
+					</ol>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<section class="ft-main ">
+				<div class="ft-main-item side footer-menu">
+					<h2 class="ft-title">Menu</h2>
+					<ul>
+						<li><a href="/?page=policy">Privacy Policy</a></li>
+						<li><a href="/?page=terms">Terms &amp; Conditions</a></li>
+						<li><a href="/?page=contactUs">Contact us</a></li>
+					</ul>
+				</div>
+
+				<div class="ft-main-item" id="main-item">
+					<a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
+					
+				</div>
+
+				<div class="ft-main-item side footer-contact">
+					<h2 class="ft-title">Contact us</h2>
+					<ul>
+						<li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+								xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
+								viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+								<g>
+									<g>
+										<polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
+									</g>
+								</g>
+								<g>
+									<g>
+										<polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
+									</g>
+								</g>
+								<g>
+									<g>
+										<path
+											d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z">
+										</path>
+									</g>
+								</g>
+								<g>
+									<g>
+										<path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+								L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z">
+										</path>
+									</g>
+								</g>
+							</svg>
+							<a href="mailto:support@wellnence.com">support@wellnence.com</a>
+						</li>
+					
+					</ul>
+				</div>
+			</section>
+			<p>© 2024 wellnence.com. All Rights Reserved.</p>
+		</footer>
+	</div>
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
