@@ -999,6 +999,10 @@ main .set>div .img {
     background: transparent;
 }
 
+.meal a{
+	display: flex;
+}
+
 @media screen and (max-width: 570px) {
 	.cancel .form-control {
 		margin-bottom: 15px;
