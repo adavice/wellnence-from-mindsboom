@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <title>Terms &amp; Conditions</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/common.css" />
+  </head>
+
+  <body class="terms">
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <a href="index.html" class="logo"
+            ><img src="imgs/logo.png" alt=""
+          /></a>
+          <div class="search" style="display: flex">
+            <form id="searchForm">
+              <input
+                type="search"
+                id="search"
+                placeholder="Search for a recipe"
+                name="search"
+                value=""
+                maxlength="15"
+              />
+              <input type="submit" value="" />
+            </form>
+          </div>
+
+          <button class="userButton">
+            <svg
+              class="open"
+              onclick="clickLogin(true);"
+              height="512pt"
+              viewBox="0 0 512 512"
+              width="512pt"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469-68.382812 0-132.667969 26.628906-181.019531 74.980469-48.351563 48.351562-74.980469 112.636719-74.980469 181.019531 0 68.378906 26.628906 132.667969 74.980469 181.019531 48.351562 48.351563 112.636719 74.980469 181.019531 74.980469 68.378906 0 132.667969-26.628906 181.019531-74.980469 48.351563-48.351562 74.980469-112.640625 74.980469-181.019531 0-68.382812-26.628906-132.667969-74.980469-181.019531zm-308.679687 367.40625c10.707031-61.648438 64.128906-107.121094 127.660156-107.121094 63.535156 0 116.953125 45.472656 127.660156 107.121094-36.347656 24.972656-80.324218 39.613281-127.660156 39.613281s-91.3125-14.640625-127.660156-39.613281zm46.261718-218.519531c0-44.886719 36.515626-81.398438 81.398438-81.398438s81.398438 36.515625 81.398438 81.398438c0 44.882812-36.515626 81.398437-81.398438 81.398437s-81.398438-36.515625-81.398438-81.398437zm235.042969 197.710937c-8.074219-28.699219-24.109375-54.738281-46.585937-75.078125-13.789063-12.480469-29.484375-22.328125-46.359375-29.269531 30.5-19.894531 50.703125-54.3125 50.703125-93.363281 0-61.425782-49.976563-111.398438-111.402344-111.398438s-111.398438 49.972656-111.398438 111.398438c0 39.050781 20.203126 73.46875 50.699219 93.363281-16.871093 6.941406-32.570312 16.785156-46.359375 29.265625-22.472656 20.339844-38.511718 46.378906-46.585937 75.078125-44.472657-41.300781-72.355469-100.238281-72.355469-165.574219 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 65.339844-27.882812 124.277344-72.355469 165.578125zm0 0"
+              ></path>
+            </svg>
+            <svg
+              class="close"
+              onclick="clickLogin(false);"
+              viewBox="0 0 512 512"
+              width="512pt"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="m256 512c-141.160156 0-256-114.839844-256-256s114.839844-256 256-256 256 114.839844 256 256-114.839844 256-256 256zm0-475.429688c-120.992188 0-219.429688 98.4375-219.429688 219.429688s98.4375 219.429688 219.429688 219.429688 219.429688-98.4375 219.429688-219.429688-98.4375-219.429688-219.429688-219.429688zm0 0"
+              />
+              <path
+                d="m347.429688 365.714844c-4.679688 0-9.359376-1.785156-12.929688-5.359375l-182.855469-182.855469c-7.144531-7.144531-7.144531-18.714844 0-25.855469 7.140625-7.140625 18.714844-7.144531 25.855469 0l182.855469 182.855469c7.144531 7.144531 7.144531 18.714844 0 25.855469-3.570313 3.574219-8.246094 5.359375-12.925781 5.359375zm0 0"
+              />
+              <path
+                d="m164.570312 365.714844c-4.679687 0-9.355468-1.785156-12.925781-5.359375-7.144531-7.140625-7.144531-18.714844 0-25.855469l182.855469-182.855469c7.144531-7.144531 18.714844-7.144531 25.855469 0 7.140625 7.140625 7.144531 18.714844 0 25.855469l-182.855469 182.855469c-3.570312 3.574219-8.25 5.359375-12.929688 5.359375zm0 0"
+              />
+            </svg>
+          </button>
+          <ul class="headerMenu">
+            <li>
+              <a href="index.html">Recipes</a>
+            </li>
+            <li>
+              <a href="articles.html">Articles</a>
+            </li>
+            <li>
+              <a href="calculator.html">Calorie Calculator</a>
+            </li>
+            <li>
+              <a href="mealplan.html">Meal Plan</a>
+            </li>
+          </ul>
+          <div class="login">
+            <form
+              id="authenticationForm"
+              action="index.html?page="
+              method="post"
+            >
+              <!--<input type="hidden" name="page" value="">-->
+              <input
+                type="text"
+                id="userName"
+                name="u"
+                value=""
+                placeholder="User"
+                maxlength="22"
+              />
+              <input
+                type="password"
+                id="userPassword"
+                name="c"
+                placeholder="Password"
+                maxlength="12"
+              />
+              <input
+                type="submit"
+                id="authentication"
+                value="Login"
+                name="authentication"
+              />
+              <a href="" id="signIn">Sign Up</a>
+              <div class="getPremium">
+                <span class="text">Don’t have an account?</span>
+                <a href="" class="getAccess">Get access to premium</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </header>
+      <main class="policy_terms terms container">
+        <section class="title">
+          <h1 class="title">REGULAMIN</h1>
+        </section>
+        <article>
+          <h3>§1 POSTANOWIENIA OGÓLNE</h3>
+
+          <p>
+            1. Niniejszy regulamin (dalej: „Regulamin"), określa zasady dostępu
+            do serwisu Nutra live oferowane przez AryaMG Ltd. z siedzibą w
+            Evripidou 5, Paralimni 5290, Famagusta, Cyprus. Numer identyfikacji
+            podatkowej: CY10412318A, kontakt w sprawie reklamacje:
+            pomoc@justpay.pl. Tel: 022 269 00 02 (9:30- 17:00). <br />
+            2. Usługi realizowane w ramach Serwsiu Nutra live są płatne na
+            warunkach przewidzianych w Regulaminie. <br />
+            3. Każdy jest zobowiązany do zapoznania się z Regulaminem przed
+            skorzystaniem z Usługi. Korzystanie z Usługi jest możliwe pod
+            warunkiem akceptacji Regulaminu. <br />
+            4. Z Usług (zdefiniowanych poniżej) mogą korzystać Użytkownicy sieci
+            następujących operatorów: Orange Polska S.A. (ORANGE), P4 Sp. z o.o.
+            (PLAY), oraz Polkomtel Sp. z o.o. (PLUS) <br />
+            5. Użytkownicy zobowiązani są do korzystania z Usługi oraz z Serwisu
+            w granicach obowiązującego w Polsce prawa oraz zgodnie z
+            postanowieniami niniejszego Regulaminu.<br />
+          </p>
+        </article>
+        <article>
+          <h3>§2 ZASADY KORZYSTANIA Z USŁUG</h3>
+          <p>
+            1. Szczegółowy opis Usług oferowanych przez Organizatora , wraz z
+            ich cenami dostępne są w Serwisie Nutra live:
+            https://pl.wellnence.com/.<br />
+            2. Organizator ma prawo dokonywać aktualizacji i rozwoju
+            funkcjonalności Usług i Serwisu.<br />
+            3. Usługi w Serwisie są płatne. Usługę można zakupić jedynie poprzez
+            przesłanie wiadomości SMS na numer 92555 25zł netto (30,75 brutto) o
+            treści ZGODA lub innej wskazanej w materiałach promocyjnych.<br />
+            4. Przed dokonaniem płatności SMS Klient powinien upewnić się:<br />
+            a. Czy w jego telefonie komórkowym pozostało wystarczająco dużo
+            wolnej pamięci niezbędnej do odczytania wybranej treści. W
+            przypadku, gdy ilość pamięci jest zbyt mała, treść zostanie
+            zamówiona i opłacona jednak Klient nie będzie mógł dokonać jej
+            odczytania;<br />
+            b. Czy posiadany telefon jest poprawnie skonfigurowany, umożliwiając
+            odbieranie wiadomości SMS. Informacje dotyczące poprawnej
+            konfiguracji telefonu Klient uzyska kontaktując się z swoim
+            Operatorem;<br />
+            c. Czy dana treść jest oferowana dla posiadanego przez niego modelu
+            telefonu komórkowego;<br />
+            5. Korzystanie z Usługi wymaga posiadania dostępu do sieci Internet.
+            Opłaty za Usługę nie obejmują kosztów transmisji danych w sieci
+            Internet związanych z korzystaniem z Usługi, które Użytkownik ponosi
+            zgodnie z taryfą Operatora, z usług którego korzysta.<br />
+            6. Usługi dostępne są na terenie Rzeczpospolitej Polskiej.<br />
+            7. Użytkownicy są uprawnieni do przenoszenia Usług i korzystania z
+            nich także w trakcie czasowego pobytu w innym państwie na terenie
+            Unii Europejskiej lub Europejskiego Obszaru Gospodarczego, jeśli
+            nastąpiła pozytywna weryfikacja rzeczywistego i stałego miejsca
+            zamieszkania na terenie Rzeczpospolitej Polskiej, na zasadach
+            określonych prawem, w tym w oparciu o sprawdzenie adresu IP
+            (protokołu internetowego), z którego Użytkownik uzyskuje dostęp do
+            Usługi oraz posiadanie umowy o świadczenie usług telefonicznych z
+            dostawcą usług świadczonych na terenie Rzeczpospolitej Polskiej.<br />
+            8. Usługa świadczona w ramach korzystania z prawa do przenoszenia
+            Usług w trakcie czasowego pobytu, jest świadczona w takim samym
+            zakresie i na takich samych warunkach jak dostępne dla Użytkownika
+            na terenie Rzeczpospolitej Polskiej.<br />
+            9. Zawarcie Umowy następuje z chwilą rozpoczęcia rozmowy
+            telefonicznej w ramach Usługi lub z chwilą wysłania przez
+            Użytkownika SMS-a na numer podany w Regulaminie<br />
+            10. Wysyłając SMS-a Użytkownik wyraża zgodę na zrealizowanie Usługi
+            przed upływem terminu do odstąpienia od Umowy.<br />
+            11. Użytkownikowi nie przysługuje prawo odstąpienia od umowy z uwagi
+            na treść art. 38 ustawy z dnia 30 maja 2014 r. o prawach konsumenta,
+            ponieważ spełnianie świadczenia rozpocznie się za wyraźną zgodą
+            Użytkownika (wskazaną powyżej) przed upływem terminu do odstąpienia
+            od Umowy.<br />
+            12. Wyrażenie zgody na rozpoczęcie świadczenia przed upływem terminu
+            odstąpienia jest dobrowolne. Ze względu na naturę Usług świadczonych
+            „na żądanie” Użytkownika, w przypadku Umowy zawieranej na odległość
+            lub poza lokalem przedsiębiorstwa Organizator może świadczyć Usługę
+            po otrzymaniu od Użytkownika wyraźnej zgody na rozpoczęcie
+            świadczenia przed upływem terminu odstąpienia.<br />
+          </p>
+        </article>
+        <article>
+          <h3>§3 POZOSTAŁE ZASADY KORZYSTANIA Z USŁUG</h3>
+          <p>
+            1. Możliwość skorzystania przez Użytkownika z Usługi jest
+            uzależniona od należytego wypełnienia przez Użytkownika wymogów
+            wynikających z niniejszego Regulaminu. W szczególności każdy
+            Użytkownik zobowiązany jest zapewnić we własnym zakresie spełnienie
+            następujących minimalnych wymagań technicznych w celu korzystania z
+            Serwisu oraz Usługi:<br />
+            a) telefon komórkowy wyposażony w aktywną kartę SIM w sieci jednego
+            z Operatorów, posiadający funkcjonalności umożliwiające aktywację i
+            korzystanie z Serwisu (w tym odbieranie wiadomości SMS, brak blokad
+            w rozumieniu odpowiedniego regulaminu danego Operatora
+            uniemożliwionych korzystanie z Usługi Dostępowej),<br />
+            b) połączenie z siecią Internet;<br />
+            c) komputer, telefon lub inne urządzenie cyfrowe z zainstalowanym
+            oprogramowaniem pozwalającym na przeglądanie stron internetowych
+            (np.: InternetExplorer, Google Chrome), prawidłowo skonfigurowane (w
+            szczególności w zakresie transmisji danych lub innych elementów
+            warunkujących skorzystanie z Usługi);<br />
+            d) prawidłowe skonfigurowanie ww. urządzeń w szczególności w
+            zakresie transmisji danych.<br />
+            2. Użytkownik powinien być uprawniony do korzystania z urządzeń, o
+            których mowa w ust. 1 powyżej w zakresie umożliwiającym mu
+            korzystanie z Serwisu i Usługi.<br />
+            3. Dodatkowe informacje dotyczące funkcjonalności oraz
+            interoperacyjności Usług, w tym kompatybilność z modelem telefonu
+            lub oprogramowaniem komputera, czy innego przeznaczonego urządzenia,
+            na którym Usługi maja zostać odtwarzane, a także ewentualne
+            techniczne środki ich ochrony mogą być również podane w Serwisie
+            przy wybranych przez Użytkownika Usługach.<br />
+            4. Użytkownik powinien chronić hasło i dostęp do swojego telefonu
+            komórkowego/komputera lub konta umożliwiającego korzystanie z
+            Serwisu czy Usług przed nieuprawnionym użyciem przez osoby
+            trzecie.<br />
+            5. Użytkownik uzyskujący dostęp do Usługi ma prawo do korzystania z
+            niej wyłącznie w zakresie określonym w niniejszym Regulaminie tj. w
+            zakresie odtwarzania Usługi na telefonie, komputerze czy innym
+            przeznaczonym do tego urządzeniu. W szczególności Użytkownik nie
+            jest uprawiony do kopiowania, zwielokrotniania, modyfikowania,
+            prezentowania, publikowana, czy rozpowszechniane w jakikolwiek
+            sposób Usługi lub jej części. Użytkownik uzyskuje uprawnienie do
+            korzystania z Usługi w zakresie opisanym powyżej wyłącznie na użytek
+            własny (tj. na użytek osoby, na której rzecz świadczoną jest dana
+            Usługa). W szczególności oznacza to, że niedopuszczalne jest
+            wykorzystywanie Usługi lub jej części w celach komercyjnych, w tym
+            niedopuszczalne jest wykorzystywanie jej na potrzeby prowadzonej
+            działalności gospodarczej, odsprzedaż, ani inne formy udostępniania
+            osobom trzecim.<br />
+          </p>
+        </article>
+        <article>
+          <h3>§4 OGRANICZENIA. PRAWA AUTORSKIE</h3>
+          <p>
+            1. Mogą wystąpić krótkotrwałe, trwające nie dłużej niż 5 godzin
+            miesięcznie, przerwy w dostępie do Usługi, spowodowane prowadzeniem
+            niezbędnych prac konserwacyjnych i/lub technicznych. W przypadku
+            przerw w dostępie, trwających dłużej z powodu awarii, Organizator
+            dołoży starań, aby usunąć awarię w najkrótszym możliwym czasie.<br />
+            2. Usługa dostępna jest z wykorzystaniem teleinformatycznej
+            transmisji danych, w trakcie której mogą zaistnieć, pozostające poza
+            kontrolą Organizatora , obiektywne okoliczności i czynniki mające
+            wpływ na możliwość korzystania z Usługi tj. warunki pogodowe,
+            nieprawidłowa instalacja, niedostateczna jakość sygnału, usterka lub
+            awaria sieci teleinformatycznej.<br />
+            3. Usługa posiada licencyjne ograniczenie terytorialne
+            (geolokalizacyjne) i, o ile nie jest inaczej wskazane w opisie danej
+            Usługi, jest dostępna dla Użytkowników logujących się z terytorium
+            Rzeczypospolitej Polskiej (identyfikowanych polskim IP) oraz dla
+            Użytkowników zweryfikowanych pozytywnie jako posiadających
+            rzeczywiste i stałe miejsce zamieszkania w Rzeczypospolitej
+            Polskiej. Prezentacja oferty w Serwisie uwzględnia licencyjne
+            ograniczenia terytorialne dotyczące oferowanych Usług.<br />
+            4. Treści niektórych Usług stanowią utwory podlegające ochronie
+            zgodnie z przepisami obowiązującego prawa. Organizator może stosować
+            systemy autoryzacji oraz szyfrowania Usług. Użytkownik uprawniony
+            jest do korzystania z Usług jedynie do własnego użytku osobistego.
+            Użytkownik nie jest uprawniony do publicznego ani komercyjnego
+            udostępniania Usług lub ich elementów w jakiejkolwiek formie.<br />
+            5. Usługi mogą posiadać (niezależnie od wymagań technicznych
+            określonych w Regulaminie powyżej) ograniczenia o charakterze
+            licencyjnym lub technicznym (w tym ograniczenia sprzętowe), na
+            skutek których Usługi mogą być niedostępne lub ich dostępność może
+            być ograniczona co do określonego rodzaju lub ilości Sprzętu.
+            Informacja o ograniczeniach sprzętowych będzie dostępna w Serwisie
+            przy opisie danej Usługi.<br />
+            6. Ograniczenie możliwości korzystania z Usługi może nastąpić w
+            przypadku próby korzystania z Usługi jednocześnie na kilku Sprzętach
+            (gdy przekroczono dozwoloną liczbę urządzeń) lub w przypadku próby
+            nieautoryzowanego dostępu do Konta Użytkownika w Serwisie.<br />
+            7. Użytkownika obowiązuje zakaz dostarczania treści o charakterze
+            bezprawnym.<br />
+          </p>
+        </article>
+        <article>
+          <h3>§5 ODPOWIEDZIALNOŚĆ</h3>
+          <p>
+            1. Organizator ponosi odpowiedzialność za brak dostarczenia Usługi w
+            terminie oraz brak zgodności Usługi z Umową.<br />
+            2. Jeżeli Usługa nie została dostarczona w terminie, Użytkownik ma
+            prawo wezwania do jej dostarczenia w trybie reklamacji określonym w
+            § 7. Jeżeli Organizator nie dostarczy Usługi niezwłocznie lub w
+            dodatkowym, wyraźnie uzgodnionym z Użytkownikiem terminie,
+            Użytkownik może odstąpić od Umowy. Użytkownik może odstąpić bez
+            wzywania do dostarczenia Usługi, jeżeli:<br />
+            a) Organizator oświadczył lub z okoliczności wyraźnie wynika, że nie
+            dostarczy Usługi, lub<br />
+            b) Użytkownik i organizator uzgodnili lub z okoliczności zawarcia
+            Umowy wyraźnie wynika, że określony termin dostarczenia Usługi miał
+            istotne znaczenie dla Użytkownika, a Organizator nie dostarczył jej
+            w tym terminie.<br />
+            3. W przypadku, świadczenia Usługi w sposób niezgodny z Umową,
+            Użytkownik może żądać doprowadzenia Usługi do zgodności z Umową,
+            poprzez złożenie reklamacji.<br />
+          </p>
+        </article>
+        <article>
+          <h3>§6 REKLAMACJE</h3>
+          <p>
+            1. Użytkownik ma prawo złożyć reklamację. <br />
+            2. Reklamacja może zostać złożona:<br />
+            a) elektronicznie z wykorzystaniem poczty elektronicznej na adres
+            e-mail: pomoc@justpay.pl<br />
+            b) w formie pisemnej – na adres Organizatora podany w
+            Regulaminie.<br />
+            3. Reklamacja powinna zawierać:<br />
+            a) imię i nazwisko oraz numer MSISDN wykorzystany do zamówienia
+            Usługi,<br />
+            b) określenie przedmiotu reklamacji oraz okresu będącego przedmiotem
+            reklamacji, przedstawienie okoliczności uzasadniających reklamację,
+            w szczególności wskazanie momentu wystąpienia problemu dotyczącego
+            Usługi,<br />
+            c) podpis Użytkownika – w przypadku reklamacji złożonej w formie
+            pisemnej.<br />
+            4. Reklamacja będzie rozpatrzona w rozsądnym terminie. W przypadkach
+            szczególnie skomplikowanych lub wymagających dodatkowych wyjaśnień
+            rozpatrzenie reklamacji nastąpi nie później niż w ciągu 14 dni od
+            jej otrzymania.<br />
+            5. Odpowiedź na reklamację zostanie udzielona w formie
+            elektronicznej na adres poczty elektronicznej, z którego reklamacja
+            została wysłana przez Użytkownika. W przypadku złożenia reklamacji
+            drogą pisemną Użytkownik powinien wskazać sposób komunikacji z
+            podaniem adresu poczty elektronicznej lub adresu zamieszkania dla
+            odpowiedzi pisemnej.<br />
+            6. Organizator może wezwać Użytkownika do uzupełnienia informacji
+            niezbędnych do rozpatrzenia reklamacji, w szczególności w celu
+            ustalenia czy brak zgodności Usługi z Umową wynika z cech Środowiska
+            cyfrowego Użytkownika. W przypadku braku ich uzupełnienia przez
+            Użytkownika reklamacja pozostawiana jest bez rozpatrzenia.
+            Użytkownik ma obowiązek współpracy w zakresie uzupełnienia danych
+            niezbędnych do rozpatrzenia reklamacji.<br />
+            7. Użytkownik ma prawo dochodzenia roszczeń w postępowaniu sądowym
+            lub w przypadku konsumenta w postępowaniach mediacyjnym lub przed
+            sądem polubownym. Zasady i procedury dostępu do pozasądowego
+            dochodzenia roszczeń przez konsumentów określane są odrębnie w
+            przepisach lub dokumentach powołujących instytucje prowadzące taką
+            działalność lub wydanych przez nie aktach wewnętrznych (np.
+            regulaminy, statuty). <br />
+          </p>
+        </article>
+        <article>
+          <h3>§7 POSTANOWIENIA KOŃCOWE. ZMIANY REGULAMINU</h3>
+          <p>
+            1. Organizator jest uprawniony do wprowadzenia zmian Regulaminu.<br />
+            2. Zmiana Regulaminu, która nie jest niezbędna do zachowania
+            zgodności Usługi z Umową może być dokonana w uzasadnionych
+            przypadkach takich jak:<br />
+            a) zmiany przepisów prawa mających wpływ na treść Regulaminu i
+            konieczności dostosowania Regulaminu w celu zachowania jego
+            zgodności z prawem;<br />
+            b) zmian wynikających z konieczności dostosowania Regulaminu do
+            zaleceń, nakazów, orzeczeń, postanowień, interpretacji, wytycznych
+            lub decyzji uprawnionych organów administracji publicznej;<br />
+            c) usprawnienie działania Usługi oraz obsługi Użytkownika;<br />
+            d) zmian związanych z bezpieczeństwem świadczenia Usługi;<br />
+            e) przeciwdziałanie nadużyciom związanym z korzystaniem z Usługi;<br />
+            f) zmian technologicznych i funkcjonalnych Usługi;<br />
+            g) zmiany w zakresie wprowadzania nowych, dodatkowych funkcji, opcji
+            Usługi;<br />
+            h) zmian redakcyjnych związanych z koniecznością poprawy, usunięcia
+            omyłek redakcyjnych, błędów;<br />
+            i) zmian o charakterze administracyjnym, w tym zmian danych
+            identyfikujących lub kontaktowych.<br />
+            3. Organizator poinformuje Użytkowników o zmianach wskazanych w ust.
+            2 powyżej poprzez opublikowanie informacji o dokonywanych zmianach
+            na stronie https://pl.wellnence.com/<br />
+            4. Publikacja nastąpi z 14 dniowym wyprzedzeniem, o ile zachowanie
+            tego terminu jest możliwe ze względu na charakter wprowadzanych
+            zmian.<br />
+            5. W przypadku zmiany Regulaminu, która istotnie i negatywnie wpływa
+            na dostęp lub korzystanie z Usługi, Organizator poinformuje
+            Użytkownika o tej zmianie i terminie jej dokonania z 14 dniowym
+            wyprzedzeniem na trwałym nośniku, o ile zachowanie tego terminu jest
+            możliwe ze względu na charakter wprowadzanych zmian.<br />
+            6. Jeśli Użytkownik nie akceptuje zmian wprowadzonych zgodnie z ust.
+            5, jest uprawniony do wypowiedzenia Umowy bez zachowania okresu
+            wypowiedzenia, nie później niż w terminie 30 dni od dnia dokonania
+            zmiany lub poinformowania o niej, jeżeli poinformowanie nastąpiło
+            później niż ta zmiana.<br />
+            7. Uprawnienie do wypowiedzenia nie przysługuje, jeżeli Organizator
+            zapewnił Użytkownikowi uprawnienie do zachowania, bez dodatkowych
+            kosztów, Usługi zgodnej z Umową, w stanie niezmienionym.<br />
+            8. W sprawach nieuregulowanych Regulaminem stosuje się przepisy
+            obowiązującego prawa.<br />
+            9. Organizator dokłada należytej staranności by chronić prywatność i
+            dane osobowe Użytkowników oraz podejmuje działania podnoszące
+            bezpieczeństwo korzystania z Serwisu oraz usprawniające korzystanie
+            z Serwisu, ale nie ma możliwości całkowitego wyeliminowania
+            wszystkich zagrożeń związanych z korzystaniem z sieci Internet, w
+            tym ryzyka sprzecznej z prawem ingerencji osób nieuprawnionych.
+            Aktualne informacje dotyczące wystąpienia szczególnych zagrożeń
+            związanych z korzystaniem z usług świadczonych drogą elektroniczną,
+            funkcjonalnościach treści cyfrowych oraz środkach ich ochrony są
+            dostępne w Serwisie.<br />
+            10. Organizator jest administratorem danych osobowych Użytkowników.
+            Informacje dotyczące przetwarzania danych osobowych określone
+            zostały w Polityce Prywatności, dostępnej w Serwisie. <br />
+            11. Umowa zawierana jest w języku polskim.<br />
+            12. Niniejsza umowa podlega prawu polskiemu Wybór prawa obcego nie
+            pozbawia jednak Użytkowników zamawiających Usługi w oparciu o
+            niniejszy Regulamin ich praw wynikających z bezwzględnie
+            obowiązujących przepisów prawa państwa stałego miejsca ich
+            zamieszkania.<br />
+            13. Niniejszy Regulamin wchodzi w życie z dniem 1 sierpnia 2024
+            r.<br />
+          </p>
+          <p>
+            WZÓR FORMULARZA ODSTĄPIENIA OD UMOWY<br />
+            (formularz ten należy wypełnić i odesłać tylko w przypadku chęci
+            odstąpienia od Umowy)
+          </p>
+          <p>
+            Adresat: …….<br />
+            Ja niniejszym informuję o moim odstąpieniu od Umowy ……….. .<br />
+            Data zawarcia umowy..............................<br />
+            Imię i nazwisko Użytkownika......................<br />
+            Adres Użytkownika................................<br />
+            Podpis Użytkownika (tylko jeżeli formularz jest przesyłany w wersji
+            papierowej)<br />
+            Data.....................
+          </p>
+        </article>
+      </main>
+    </div>
+    <footer>
+      <section class="ft-main">
+        <div class="ft-main-item side footer-menu">
+          <h2 class="ft-title">Menu</h2>
+          <ul>
+            <li><a href="/?page=policy">Privacy Policy</a></li>
+            <li><a href="/?page=terms">Terms &amp; Conditions</a></li>
+            <li><a href="/?page=contactUs">Contact us</a></li>
+          </ul>
+        </div>
+
+        <div class="ft-main-item" id="main-item">
+          <a href="/" class="logo"><img src="imgs/logo.png" alt="" /></a>
+        </div>
+
+        <div class="ft-main-item side footer-contact">
+          <h2 class="ft-title">Contact us</h2>
+          <ul>
+            <li>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                height="20"
+                width="20"
+                viewBox="0 0 512 512"
+                style="enable-background: new 0 0 512 512"
+                xml:space="preserve"
+              >
+                <g>
+                  <g>
+                    <polygon
+                      points="339.392,258.624 512,367.744 512,144.896 "
+                    ></polygon>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <polygon
+                      points="0,144.896 0,367.744 172.608,258.624 "
+                    ></polygon>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"
+                    ></path>
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path
+                      d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+							L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <a href="mailto:support@wellnence.com">support@wellnence.com</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <p>© 2024 wellnence.com. All Rights Reserved.</p>
+    </footer>
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
